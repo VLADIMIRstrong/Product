@@ -1,3 +1,4 @@
+package org.example.mavenProduct.services;
 public class SmartPhone extends Product {
     private String vendor;
 

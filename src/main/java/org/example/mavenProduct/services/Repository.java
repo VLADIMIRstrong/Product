@@ -1,3 +1,4 @@
+package org.example.mavenProduct.services;
 public class Repository {
     private Product[] products = new Product[0];
 

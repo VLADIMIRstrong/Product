@@ -1,3 +1,4 @@
+package org.example.mavenProduct.services;
 public class ProductManager {
     private Repository repository;
 

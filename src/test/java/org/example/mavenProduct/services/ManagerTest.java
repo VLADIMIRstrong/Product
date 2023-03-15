@@ -1,3 +1,5 @@
+package org.example.mavenProduct.services;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -62,7 +64,7 @@ public class ManagerTest {
         manager.add(book3);
         Product[] actual = manager.searchBy("Potter");
 
-        Product[] expected = {book1,book3};
+        Product[] expected = {book1, book3};
 
         Assertions.assertArrayEquals(expected, actual);
     }
