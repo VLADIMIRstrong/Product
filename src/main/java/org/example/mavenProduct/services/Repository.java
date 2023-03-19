@@ -1,4 +1,5 @@
 package org.example.mavenProduct.services;
+
 public class Repository {
     private Product[] products = new Product[0];
 
@@ -16,16 +17,34 @@ public class Repository {
         return products;
     }
 
-    public void removeById(int id) {
+    public void removeById(int removeId) {
+
+
         Product[] tmp = new Product[products.length - 1];
+        Product removeProduct=findById(removeId);
+        if (removeProduct==null){
+            throw new NotFoundException(removeId);
+        }
         int index = 0;
         for (Product product : products) {
-            if (product.getId() != id) {
+            if (product.getId() != removeId) {
                 tmp[index] = product;
-                index++;
+                index++;}
             }
             products = tmp;
 
         }
+
+         private Product findById( int id){
+            for (Product product:products) {
+                if (product.getId()==id){
+                    return product;
+                }
+            }
+            return null;
+        }
+
     }
-}
+ 
+
+

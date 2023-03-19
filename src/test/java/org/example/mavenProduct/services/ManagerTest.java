@@ -68,4 +68,34 @@ public class ManagerTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
+    @Test
+    public void addTestRun() {
+        Repository repo = new Repository();
+        ProductManager manager = new ProductManager(repo);
+        Book book1 = new Book(1, " Potter1", 200, "King");
+        Book book2 = new Book(2, "  It", 200, "King");
+        Book book3 = new Book(3, "    Potter2", 200, "King");
+        repo.add(book1);
+        repo.add(book2);
+        repo.add(book3);
+        Assertions.assertThrows(NotFoundException.class, () -> repo.removeById(4));
+    }
+
+    @Test
+    public void addTestRun2() {
+        Repository repo = new Repository();
+        ProductManager manager = new ProductManager(repo);
+        Book book1 = new Book(1, " Potter1", 200, "King");
+        Book book2 = new Book(2, "  It", 200, "King");
+        Book book3 = new Book(3, "    Potter2", 200, "King");
+        repo.add(book1);
+        repo.add(book2);
+        repo.add(book3);
+        repo.removeById(3);
+         Product[] actual=repo.findAll();
+         Product[] expected ={book1,book2};
+        Assertions.assertArrayEquals(expected, actual);
+
+    }
 }

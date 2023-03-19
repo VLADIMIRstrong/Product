@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fcc6e06-fd4e-492e-897e-99772e0527f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mavenProduct/services/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mavenProduct/services/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mavenProduct/services/ProductManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mavenProduct/services/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mavenProduct/services/SmartPhone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/mavenProduct/services/ManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mavenProduct/services/NotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mavenProduct/services/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mavenProduct/services/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/mavenProduct/services/ManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/mavenProduct/services/ManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,20 +41,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_directory_selection": "C:/IdeaProjects/mavenProduct/src/test/java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/IdeaProjects/mavenProduct/src/main/java/org/example/mavenProduct/services&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ManagerTest">
+  <component name="RunManager" selected="JUnit.ManagerTest.addTestRun2">
     <configuration name="ManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mavenProduct" />
       <extension name="coverage">
@@ -71,26 +66,6 @@
       <option name="PACKAGE_NAME" value="org.example.mavenProduct.services" />
       <option name="MAIN_CLASS_NAME" value="org.example.mavenProduct.services.ManagerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ManagerTest.addTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mavenProduct" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ManagerTest" />
-      <option name="METHOD_NAME" value="addTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ManagerTest.addTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mavenProduct" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ManagerTest" />
-      <option name="METHOD_NAME" value="addTest2" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,13 +90,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ManagerTest.addTestRun" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mavenProduct" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.mavenProduct.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.mavenProduct.services" />
+      <option name="MAIN_CLASS_NAME" value="org.example.mavenProduct.services.ManagerTest" />
+      <option name="METHOD_NAME" value="addTestRun" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManagerTest.addTestRun2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mavenProduct" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.mavenProduct.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.mavenProduct.services" />
+      <option name="MAIN_CLASS_NAME" value="org.example.mavenProduct.services.ManagerTest" />
+      <option name="METHOD_NAME" value="addTestRun2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ManagerTest.addTestRun2" />
         <item itemvalue="JUnit.ManagerTest" />
+        <item itemvalue="JUnit.ManagerTest.addTestRun" />
         <item itemvalue="JUnit.ManagerTest.addTest4" />
         <item itemvalue="JUnit.ManagerTest.addTest3" />
-        <item itemvalue="JUnit.ManagerTest.addTest2" />
-        <item itemvalue="JUnit.ManagerTest.addTest" />
       </list>
     </recent_temporary>
   </component>
