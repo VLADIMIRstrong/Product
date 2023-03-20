@@ -21,30 +21,31 @@ public class Repository {
 
 
         Product[] tmp = new Product[products.length - 1];
-        Product removeProduct=findById(removeId);
-        if (removeProduct==null){
+        Product removeProduct = findById(removeId);
+        if (removeProduct == null) {
             throw new NotFoundException(removeId);
         }
         int index = 0;
         for (Product product : products) {
             if (product.getId() != removeId) {
                 tmp[index] = product;
-                index++;}
+                index++;
             }
-            products = tmp;
-
         }
-
-         private Product findById( int id){
-            for (Product product:products) {
-                if (product.getId()==id){
-                    return product;
-                }
-            }
-            return null;
-        }
+        products = tmp;
 
     }
+
+    private Product findById(int id) {
+        for (Product product : products) {
+            if (product.getId() == id) {
+                return product;
+            }
+        }
+        return null;
+    }
+
+}
  
 
 
